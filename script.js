@@ -1,10 +1,10 @@
 const divContainer = document.querySelector('.div-container')
 
 function sixteendivs () {
-    for (let i = 1; i < 17; i++) {
+    for (let i = 1; i < 257; i++) {
         const div = document.createElement('div');
         div.className = "div" + i;
-        div.innerText = "div" + i;
+        // div.innerText = "div" + i;
         divContainer.appendChild(div);
         console.log(div)
     }
