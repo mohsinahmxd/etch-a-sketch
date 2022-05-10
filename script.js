@@ -1,4 +1,6 @@
 const divContainer = document.querySelector('.div-container')
+const divChildren = divContainer.childNodes;
+
 
 function sixteendivs () {
     for (let i = 1; i < 257; i++) {
@@ -9,9 +11,13 @@ function sixteendivs () {
             div.style.backgroundColor = "red";
         });
         divContainer.appendChild(div);
-        console.log(div)
     }
 }
 
+function changeLayout () {
+    let uservalue = prompt("Enter new layout value")
+    console.log(uservalue)
+
+}
 
 sixteendivs();
